@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    .satu{
+      display: grid;
+      grid-template-columns: 200px 75px;
+    }
+    .i-satu{
+      background-color: rgb(82, 199, 146);
+    }
+    .i-dua{
+      background-color: rgb(224, 100, 100);
+    }
+
+    .dua{
+      display: grid;
+      grid-template-columns: 50px 1fr 50px;
+    }
+    .tiga{
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px 20px;
+    }
+
+    .empat{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      font-family: Arial, Helvetica, sans-serif;
+      gap: 15px;
+    }
+    .empat-2{
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    .empat-2 img{
+      height: auto;
+      width: 100%;
+    } 
+    .icon{
+      padding-left: 10px;
+      margin-top: -10px;
+    }
+    .icon img{
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+    button{
+    background-color: #0c6eac;
+    color: white;
+    border: none;
+    padding: 8px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-bottom: 10px;
+    }
+
+  </style>
+</head>
+<body>
+  <h3>Lesson 11a</h3>
+  <div class="satu">
+    <div class="i-satu">200px</div>
+    <div class="i-dua">75px</div>
+  </div>
+  <br><br>
+
+  <h3>Lesson 11b</h3>
+  <div class="dua">
+    <div class="i-satu">col1</div>
+    <div class="i-dua">col2</div>
+    <div class="i-satu">col3</div>
+  </div>
+  <br><br>
+
+  <h3>Lesson 11c</h3>
+  <div class="tiga" >
+    <div class="i-dua">col1</div>
+    <div class="i-dua">col2</div>
+    <div class="i-dua">col3</div>
+    <div class="i-dua">col4</div>
+    <div class="i-dua">col1</div>
+    <div class="i-dua">col2</div>
+    <div class="i-dua">col3</div>
+    <div class="i-dua">col4</div>
+  </div>
+  <br><br>
+
+  <h3>Lesson 11d</h3>
+  <div class="empat">
+    <div class="empat-2">
+      <img src="kucing2.jpg" alt="" class="profile">    
+      <div class="teks icon">
+        <h2>Oliver</h2>
+        <p><img src="kucing2.jpg" alt=""> 2 mutual friends</p>
+        <button>Add Friend</button>
+      </div>
+    </div>
+    <div class="empat-2">
+      <img src="kucing2.jpg" alt="" class="profile">    
+      <div class="teks icon">
+        <h2>Oliver</h2>
+        <p><img src="kucing2.jpg" alt=""> 2 mutual friends</p>
+        <button>Add Friend</button>
+      </div>
+    </div>
+    <div class="empat-2">
+      <img src="kucing2.jpg" alt="" class="profile">    
+      <div class="teks icon">
+        <h2>Oliver</h2>
+        <p><img src="kucing2.jpg" alt=""> 2 mutual friends</p>
+        <button>Add Friend</button>
+      </div>
+    </div>
+  </div> 
+</body>
+</html>
