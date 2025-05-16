@@ -6,24 +6,97 @@
   <title>Document</title>
 
   <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
     .border{
       width: 200px;
       padding: 10px;
       border-radius: 8px;
-      font-family: Arial, Helvetica, sans-serif;
+      border: 1px solid;
     }
     .isi{
       display: flex;
       justify-content: space-between;
       margin-bottom: 8px;
     }
-    .text{
+    .teks{
       background-color: blue;
       color: white;
       border-radius: 40%;
-      padding: 5px ;
+      padding: 4px;
+      padding-left: 8px ;
+      padding-right: 8px ;
       
     }
+
+    .background{
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: rgb(71, 34, 106);
+      padding-left: 15px;
+      padding-right: 15px;
+      color: white;
+    }
+    
+    .search{
+      width: 300px;
+      border: none;
+      height: 30px;
+      border-radius: 15px;
+      padding-left: 15px;
+    }
+    
+    .button {
+      background-color: rgb(71, 34, 106);
+      color: white;
+      font-size: 15px;
+      border-color: white;
+      border-radius: 5px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+    .profile {
+    display: flex;
+    padding-bottom: 20px;
+  }
+  .card {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .text {
+    margin-left: 15px;
+    margin-right: auto;
+    
+  }
+  .name {
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  .info {
+    font-size: 14px;
+    color: rgb(101, 103, 107);
+    margin: 0;
+    margin-bottom: 5px;
+  }
+  #tombol {
+    font-weight: bold;
+    background-color: #1da1f2;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+
   </style>
 </head>
 <body>
@@ -58,7 +131,60 @@
 <div class="border">
   <div class="isi">
     <p>Home</p>
-    <p class="text">14</p>
+    <p class="teks">14</p>
+  </div>
+  <div class="isi">
+    <p>Notifications</p>
+    <p class="teks">3</p>
+  </div>
+  <div class="isi">
+    <p>Messages</p>
+    <p class="teks">5</p>
+  </div>
+</div>
+<br><br>
+
+<h3>Lesson 12f</h3>
+<div class="background">
+    <h3>Home</h3>
+    <input type="text" class="search" placeholder="Search">
+    <button class="button">Download</button>
+</div>
+<br><br>
+
+<h3>Lesson 12g</h3>
+
+<div class="profile">
+  <img src="kucing.jpg" alt="Profile" class="card">
+  <div class="text">
+      <h4 class="name">Oliver</h4>
+      <p class="info">The Cat</p>
+      <p class="info">Popular</p>
+  </div>
+  <div class="follow">
+    <button id="tombol">Follow</button>
+  </div>
+</div>
+<div class="profile">
+  <img src="kucing2.jpg" alt="Profile" class="card">
+  <div class="text">
+      <h4 class="name">Mimi</h4>
+      <p class="info">Sleepy Cat</p>
+      <p class="info">Popular</p>
+  </div>
+  <div class="follow">
+    <button id="tombol">Follow</button>
+  </div>
+</div>
+<div class="profile">
+  <img src="Anjing.jpg" alt="Profile" class="card">
+  <div class="text">
+      <h4 class="name">Rex</h4>
+      <p class="info">Happy Bulldog</p>
+      <p class="info">Popular</p>
+  </div>
+  <div class="follow">
+    <button id="tombol">Follow</button>
   </div>
 </div>
 

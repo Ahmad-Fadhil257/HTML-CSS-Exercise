@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .flexbox{
+      display: flex;
+      flex-direction: row;
+      height: 60px;
+    }
+    .colom1{
+    background-color: lightpink;
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    }
+    .colom2{
+    width: 150px;
+    background-color: lightblue;
+    }
+
+    .row2{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      color: white;
+    }
+
+    .border{
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      max-width: 500px;
+    }
+
+    .nav{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 0 15px 0;
+      color: gray;
+    }
+    
+
+    .content{
+      display: flex;
+    }
+    .content img{
+      width: 50px; height: 50px;
+      border-radius: 50%;
+      margin-right: 10px;
+      align-items: center;
+    }
+     .email{
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    .isi_email{
+      display: flex;
+      justify-content: space-between;
+      align-items: center
+    }
+  </style>
+
+</head>
+<body>
+  <h3> Lesson 13a </h3>
+
+  <div class="flexbox">
+    <div class="colom1">
+      <p style="background-color: black; color: white;">item1</p>
+    </div>
+    <div class="colom2"></div>
+  </div>
+  <br><br>
+
+  <h3> Lesson 13b </h3>
+
+  <div class="flexbox">
+    <div class="colom1"></div>
+      <div class="colom2">
+        <div>row1</div>
+          <div class="row2">
+            <div style="background-color: black;">row2</div>
+            <div style="background-color: black;">row2</div>
+          </div>
+      </div>
+  </div>
+<br><br>
+
+<h3> Lesson 13c </h3>
+<div class="border">
+  <div class="nav"">ALL INBOXES</div>
+    <div class="content"><img src="kucing.jpg" alt="">
+        <div class="email">
+          <div class="isi_email">
+            <h3 style="margin: 0;"> Chewy Promotions</h3>
+            <div style="color: gray;">4:58 PM</div>
+          </div>
+            <h4 style="margin: 0;">Biggest sales of the year!</h4>
+            <h4 style="color: gray; margin-top: 5px;">Hey there! We're writing to tell you about out</h4>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
