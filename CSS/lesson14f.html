@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      height: 3000px;
+    }
+    .all{
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+
+      display: flex;
+      flex-direction: row;
+      background-color: #2f3136;
+      color: white;
+    }
+    .icon{
+      width: 80px;
+      background-color: #202225;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 10px; padding-bottom: 10px;
+      gap: 12px;
+    }
+    .icon img{
+      width: 60px;
+      height: auto;
+      border-radius: 50%;
+    }
+
+    .channel{
+      width: 200px;
+      padding: 20px 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .channel h3{
+      margin: 0 0 10px 0;
+      color: #e2e4e6;
+    }
+    .add{
+      display: flex;
+      flex-direction: row;
+      gap: 120px;
+
+    }
+    .informasi{
+      color: #939597;
+      font-size: 17px;
+    }
+  </style>
+</head>
+<body>
+  <div class="all">
+    <div class="icon">
+      <img src="kucing.jpg" alt="">
+      <img src="kucing.jpg" alt="">
+      <img src="kucing.jpg" alt="">
+    </div>
+    <div class="channel">
+      <div class="add">
+        <h3>INFO</h3>
+        <h3>+</h3>
+      </div>
+      <div class="informasi"># new-videos</div>
+      <div class="informasi"># updates</div>
+      <div class="informasi"># faq</div>
+    </div>
+  </div>
+</body>
+</html>
