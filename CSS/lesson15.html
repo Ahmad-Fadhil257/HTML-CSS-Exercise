@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      height: 3000px;
+    }
+    button{
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      border-radius: 60%;
+      padding: 10px;
+      width: 40px;
+      color: white;
+      background-color: black;
+      font-size: 16px;
+    }
+
+    .kotak{
+      position: fixed;
+      width: 320px;
+      height: 180px;
+      background-color: gray;
+      bottom: 20px;
+      right: 20px;
+    }
+    .tombol{
+      left: -19px;
+      top: -19px;
+    }
+    .timestamp{
+      position: absolute;
+      right: 5px;
+      bottom: 5px;
+      background-color: black;
+      color: white;
+      padding: 5px;
+      width: 40px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .box{
+      position: relative;
+      display: inline-block;
+    }
+    .box img{
+      width: 250px;
+    }
+    .diskon{
+      position: absolute;
+      right: 0;
+      top: 10px;
+      color: white;
+      background-color: black;
+      padding: 10px 15px;
+      font-weight: lighter;
+      font-size: 14px;
+    }
+    .shadow{
+      position: absolute;
+      width: 250px;
+      height: 90px;
+      background-color: rgba(255, 255, 255, 0.7);
+      bottom: 0;
+    }
+    .cart{
+      position: absolute;
+      top: 75%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #fff;
+      color: black;
+      border-radius: 0%;
+      width: 115px;
+      font-size: 14px;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <h3>Lesson 15a</h3>
+  <button type="button">X</button>
+<br><br>
+
+<h3>Lesson 15b</h3>
+  <div class="kotak"></div>
+<br><br>
+
+<h3>Lesson 15c</h3>
+
+<div class="kotak">
+  <button type="button" class="tombol">X</button>
+</div>
+<br><br>
+
+<h3>Lesson 15d</h3>
+
+<div class="kotak">
+  <button type="button" class="tombol">X</button>
+  <div class="timestamp">0:29</div>
+</div>
+<br><br>
+
+<h3>Lesson 15e dan f</h3>
+<div class="box">
+  <img src="baju3.jpeg" alt="">
+  <div class="diskon">20% OFF</div>
+  <div class="shadow"></div>
+  <button type="button" class="cart">Add to Cart</button>
+</div>
+
+<br><br>
+</body>
+</html>
